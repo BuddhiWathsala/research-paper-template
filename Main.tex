@@ -1,0 +1,50 @@
+\documentclass[11pt, a4paper, twoside]{article}
+
+	\usepackage{titlesec}
+	\usepackage[a4paper,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+	\usepackage[utf8]{inputenc}
+	\usepackage{csquotes}	
+	\usepackage[english]{babel}
+	\usepackage[super]{nth}
+	\usepackage[backend=biber,bibencoding=ascii,style=ieee]{biblatex}
+	\usepackage{tocloft}
+	\usepackage{blindtext}
+	\usepackage{multicol} % Multicolumn
+	\usepackage{graphicx} % Images
+	\usepackage{svg} % Used for SVG images
+	\usepackage{algorithm,algpseudocode} % for algorithms
+	
+	\def\NAME{Buddhi Wathsala}
+	\def\NAMEMAIL{b.wathsala.bw@gmail.com}
+	\def\SUPERVISOR{Prof.Albus Dumbledore}
+	\def\SUPERVISORMAIL{ad@ucsc,cmb.ac.lk}
+	\def\COSUPERVISOR{Prof. Severus Snape}
+	\def\COSUPERVISORMAIL{ss@ucsc,cmb.ac.lk}
+	\def\UNIVERSITY{University of Colombo School of Computing}
+	\def\TITLE{Online Learning for Solving Data Availability Problem in Natural Language Processing}
+	
+	\setlength{\parindent}{0em}
+	\setlength{\parskip}{0.5em}
+	\title{\textbf{\TITLE}}
+	\author{
+		\NAME \\ \textit{\NAMEMAIL} \and 
+		\SUPERVISOR \\ \textit{\SUPERVISORMAIL} \and 
+		\COSUPERVISOR \\ \textit{\COSUPERVISORMAIL}
+		}
+	\date{\textit{\UNIVERSITY}}
+	\bibliography{Paper}
+	\titleformat{\section}[block]{\sffamily\Large\bfseries\filcenter}{\thesection}{1em}{}
+	\graphicspath{ {./images/} }
+	
+	
+\begin{document}
+	\maketitle
+	\begin{multicols}{2}
+		\input{sections/abstract}
+		\input{sections/introduction}
+		\input{sections/relatedworks}
+		\printbibliography	
+	\end{multicols}	
+	
+	
+\end{document}

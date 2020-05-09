@@ -1,0 +1,15 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'Main.blg'
+[40] biber:290> INFO - === ඉ නෙවැ 18, 2018, 12:30:03
+[145] Biber.pm:352> INFO - Reading 'Main.bcf'
+[291] Biber.pm:777> INFO - Found 5 citekeys in bib section 0
+[302] Biber.pm:3494> INFO - Processing section 0
+[313] Biber.pm:3658> INFO - Looking for bibtex format file 'Paper.bib' for section 0
+[318] bibtex.pm:1176> INFO - Decoding LaTeX character macros into UTF-8
+[321] bibtex.pm:1037> INFO - Found BibTeX data source 'Paper.bib'
+[432] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[432] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[432] Biber.pm:3307> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[432] Biber.pm:3311> INFO - No sort tailoring available for locale 'en-US'
+[435] bbl.pm:526> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
+[448] bbl.pm:619> INFO - Output to Main.bbl
