@@ -1,0 +1,50 @@
+\section{Related Works}
+		\subsection{AA}
+			\blindtext\cite{O2,M2}
+			\begin{figure*}
+		    \centering
+		    \def\svgwidth{\columnwidth}
+			\input{images/automata.pdf_tex}
+				\caption{Research Design}
+			\label{Ch3Fig1:ResearchDesign}
+		\end{figure*}
+		
+		\begin{table*}
+		\centering
+		\begin{tabular}[c]{|c|c|c|c|}
+			\hline
+				Mini Batch & Precision & Recall & F-Measure \\
+			\hline
+				1 & 20.2481 & 30.8333 & 24.444 \\
+			\hline
+				2 & 31.9227 & 44.5519 & 37.1945 \\
+			\hline
+				3 & 30.5363 & 49.4973 & 37.7708 \\
+			\hline
+				4 & 29.5513 & 52.2244 & 37.7446 \\
+			\hline
+			
+		\end{tabular}
+		\caption{Precision, Recall, and F-Measure value variation for 4 mini batches in the CRF model}
+		\label{Ch5Tab1:CRFResults}
+	\end{table*}
+	
+	\begin{algorithm*}
+	\caption{Data Preprocessing}
+	\label{alg:DataPreprocessing}
+	\begin{algorithmic}[1]
+		\Procedure{preprocess}{$file$}
+		\State $text \gets read(file)$
+		\State $vocabulary \gets CREATE\_VOCABULARY(text)$
+		\State $data \gets []$
+		\State $tokens \gets []$
+		\For{$sentence$ in $text$}
+		   \State $s\_words \gets VOCABULARY\_INDEX(sentence)$
+		   \State $s\_tokens \gets TOKENS(sentence)$
+		   \State $data.add(s\_words)$
+		   \State $tokens.add(s\_tokens)$
+		\EndFor
+		\State\Return $(data, tokens)$
+		\EndProcedure
+	\end{algorithmic}
+	\end{algorithm*}
