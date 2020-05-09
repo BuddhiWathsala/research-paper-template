@@ -1,2 +1,2 @@
-# research-paper-template
-A generic latex research paper template
+# Research Paper Template
+A generic latex research paper template that you can used for your research papers.
